@@ -1,0 +1,96 @@
+#blogTitle {
+  background-color: $lightBackground;
+  padding: 60px 0px;
+  margin-bottom: 100px;
+  .container {
+    .row {
+      .col-lg-12 {
+        .title {
+          text-align: center;
+          h2 {
+            font-family: $secondFont;
+            position: relative;
+          }
+          span {
+            color: rgba(0, 0, 0, 0.04);
+            position: absolute;
+            top: -17px;
+            font-size: 130px;
+            left: 0;
+            white-space: nowrap;
+            width: 100%;
+            text-transform: uppercase;
+            font-weight: 300;
+            font-family: $mainFont;
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #blogTitle {
+    .container {
+      .row {
+        .col-lg-12 {
+          .title {
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #blogTitle {
+    .container {
+      .row {
+        .col-lg-12 {
+          .title {
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #blogTitle {
+    .container {
+      .row {
+        .col-lg-12 {
+          .title {
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+    #blogTitle {
+      .container {
+        .row {
+          .col-lg-12 {
+            .title {
+              span {
+                top: 13px;
+                font-size: 100px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }

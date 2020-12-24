@@ -1,0 +1,42 @@
+#cartTitle {
+    background-color: $lightBackground;
+    text-align: left;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    margin-bottom: 100px;
+    .container {
+        .row {
+            .col-lg-12 {
+                h2 {
+                    font-family: $secondFont;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
+
+#cart{
+    text-align: center;
+    padding-bottom: 100px;
+    .container{
+        .row{
+            .col-lg-12{
+                .cartDetail{
+                    p{
+                        font-size: 35px;
+                        line-height: 1.142857142857143em;
+                        font-weight: 500;
+                        font-family: $secondFont;
+                        margin-bottom: 40px;
+                    }
+                    a{
+                        text-decoration: none;
+                        @include buttonWithHover;
+                        padding: 20px 30px;
+                    }
+                }
+            }
+        }
+    }
+}

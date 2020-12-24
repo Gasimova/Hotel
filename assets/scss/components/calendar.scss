@@ -1,0 +1,98 @@
+.leftSide {
+    background-color: $creamColor;
+    color: $textColor;
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 15px;
+    height: 470px;
+    .chekIn {
+        padding-top: 25px;
+        margin-top: 40px;
+        p {
+            margin-bottom: 0px !important;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            font-family: $mainFont;
+            font-size: 13px;
+            font-weight: 400;
+        }
+        input {
+            background: transparent;
+            border: 0.7px solid $textColor;
+            margin-bottom: 25px;
+            padding: 8px 8px;
+            opacity: 0.4;
+
+            &:hover {
+                opacity: 1;
+                cursor: pointer;
+            }
+            &:focus {
+                outline: none;
+                border: 1px solid $textColor;
+            }
+        }
+    }
+    .btn-group {
+        margin-top: 15px;
+        button {
+            width: 200px;
+            background: transparent;
+            border-radius: 0;
+            padding: 8px 8px;
+            color: black;
+            border: 0.7px solid #4d4d4d5c;
+            font-weight: 100;
+            &:focus {
+                box-shadow: none !important;
+            }
+        }
+        .dropdown-menu {
+            background-color: #faf9f5;
+            background-color: #faf9f5;
+            width: 100%;
+            a{
+                color: black;
+                text-decoration: none;
+                margin-left: 15px;
+                transition: all 0.3s;
+                &:hover{
+                    color: $navColor;
+                }
+            }
+            p {
+                color: black;
+                text-decoration: none;
+                position: relative;
+                left: 14px;
+                padding: 10px 0px;
+                transition: all 0.3s;
+                cursor: pointer;
+                &:hover{
+                    color: $navColor;
+                }
+                input {
+                    max-width: 20%;
+                    position: absolute;
+                    right: 30px;
+                    background: transparent;
+                    border: 1px solid $textColor;
+                    &:focus {
+                        outline: none;
+                        outline: -webkit-focus-ring-color auto 0px;
+                    }
+                }
+            }
+            .dropItem {
+                display: block;
+            }
+        }
+    }
+    .checkBtn {
+        margin-top: 45px;
+        a {
+            @include buttonWithHover;
+        }
+    }
+}

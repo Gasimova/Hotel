@@ -1,0 +1,28 @@
+//common 
+@import "shared/variables";
+@import "shared/mixing";
+
+//pages
+@import "pages/index.scss";
+@import "pages/about.scss";
+@import "pages/rooms.scss";
+@import "pages/gallery.scss";
+@import "pages/blog.scss";
+@import "pages/singleBlog.scss";
+@import "pages/promotions.scss";
+@import "pages/activities.scss";
+@import "pages/menu.scss";
+@import "pages/contact.scss";
+@import "pages/login.scss";
+@import "pages/cart.scss";
+@import "pages/singleRoom.scss";
+
+//components
+@import "components/header.scss";
+@import "components/footer.scss";
+@import "components/calendar.scss";
+@import "components/blogTitle.scss";
+@import "components/tags.scss";
+@import "components/subscribe.scss";
+@import "components/specialOffer.scss";
+@import "components/relatedRoom.scss";

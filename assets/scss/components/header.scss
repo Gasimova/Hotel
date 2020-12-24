@@ -1,0 +1,223 @@
+.headerBg {
+  transition: all 0.3s linear;
+  transform-origin: top;
+  .myNav {
+    background-color: white;
+    position: relative;
+    z-index: 100;
+    margin-top: 10 px;
+    .container {
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+      .row {
+        .col-lg-12 {
+          .navbar {
+            padding: 0px !important;
+            .navbar-brand {
+              width: 100px;
+              img {
+                max-width: 100%;
+              }
+            }
+            .responsiveLoginAndBasket {
+              display: none;
+              a {
+                text-decoration: none;
+                color: black;
+                transition: all 0.3s;
+                &:hover {
+                  color: $navColor;
+                }
+              }
+              .user {
+                margin-top: 3px;
+              }
+            }
+            .collapse {
+              font-family: $mainFont;
+              color: $textColor;
+              justify-content: flex-end;
+              .navbar-nav {
+                float: right;
+                .nav-item {
+                  text-transform: uppercase;
+                  font-weight: 500;
+                  font-size: 12px;
+                  letter-spacing: 4px;
+                  margin-right: 15px;
+                  padding: 30px 0px;
+                  .nav-link {
+                    color: black;
+                    // transition: all 0.5s;
+                    &:hover {
+                      color: $navColor;
+                      cursor: pointer;
+                    }
+                    i {
+                      font-size: 16px;
+                    }
+                  }
+                }
+                .dropdown-menu {
+                  background-color: $creamColor !important;
+                  color: black;
+                  font-size: 12px !important;
+                  font-weight: 500;
+                  height: 135px;
+                  padding-right: 15px;
+                  transition: all 0.5s ease-in-out;
+                  top: 95%;
+                  margin-top: 4px;
+                  .dropdown-item {
+                    text-transform: uppercase !important;
+                    text-align: left;
+                    padding-top: 13px;
+                    position: relative;
+                    &:hover {
+                      color: $navColor;
+                      cursor: pointer;
+                      background-color: $creamColor !important;
+                      &::after {
+                        color: $navColor;
+                      }
+                    }
+                    &::after {
+                      content: "\f105";
+                      position: absolute;
+                      top: 11px;
+                      right: 0;
+                      color: black;
+                      font-family: "FontAwesome";
+                      transition: all 0.5s;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .headerBg {
+    .myNav {
+      .container {
+        .row {
+          .col-lg-12 {
+            .navbar {
+              .navbar-brand {
+                margin-left: 20px;
+              }
+              .responsiveLoginAndBasket {
+                display: block;
+                position: absolute;
+                top: 12px;
+                right: 18% ;
+                i {
+                  font-size: 20px;
+                  margin-left: 10px;
+                }
+              }
+              .collapse {
+                .navbar-nav {
+                  float: left !important;
+                  padding-left: 20px;
+                  .dropdown-menu {
+                    background-color: white !important;
+                  }
+                  .nav-item {
+                    padding: 0px !important;
+                  }
+                  .responsiveIcon {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .headerBg {
+    .myNav {
+      .container {
+        .row {
+          .col-lg-12 {
+            .navbar {
+              .responsiveLoginAndBasket {
+                display: block;
+                position: absolute;
+                top: 12px;
+                right: 13%;
+                i {
+                  font-size: 20px;
+                  margin-left: 10px;
+                }
+              }
+              .collapse {
+                .navbar-nav {
+                  float: left !important;
+                  .dropdown-menu {
+                    background-color: white !important;
+                  }
+                  .nav-item {
+                    padding: 0px !important;
+                  }
+                  .responsiveIcon {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .headerBg {
+    .myNav {
+      .container {
+        .row {
+          .col-lg-12 {
+            .navbar {
+              .responsiveLoginAndBasket {
+                display: block;
+                position: absolute;
+                top: 12px;
+                right: 11%;
+                i {
+                  font-size: 20px;
+                  margin-left: 10px;
+                }
+              }
+              .collapse {
+                .navbar-nav {
+                  float: left !important;
+                  .dropdown-menu {
+                    background-color: white !important;
+                  }
+                  .nav-item {
+                    padding: 0px !important;
+                  }
+                  .responsiveIcon {
+                    display: none;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

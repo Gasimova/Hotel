@@ -1,0 +1,224 @@
+#titleOfPromotion {
+    background-image: url("../img/bgTitle.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    .container {
+        .row {
+            .col-lg-12 {
+                .title {
+                    text-align: center;
+                    h1 {
+                        font-size: 60px;
+                        font-family: $secondFont;
+                        font-weight: 500;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#offers {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .container {
+        .row {
+            .col-lg-12 {
+                .title {
+                    text-align: center;
+                    h2 {
+                        font-size: 43px;
+                        line-height: 1.069767441860465em;
+                        font-weight: 500;
+                        font-family: $secondFont;
+                    }
+                    p {
+                        font-family: $mainFont;
+                        font-weight: 300;
+                        font-size: 21px;
+                        max-width: 60%;
+                        margin: auto;
+                        margin-top: 25px;
+                    }
+                }
+            }
+            .col-lg-4 {
+                .promotion {
+                    text-align: center;
+                    background-color: $lightBackground;
+                    padding-bottom: 50px;
+                    margin-top: 100px;
+                    span {
+                        display: block;
+                    }
+                    .offer {
+                        font-size: 35px;
+                        font-weight: 300;
+                        font-family: $secondFont;
+                        padding-top: 50px;
+                    }
+                    .price {
+                        font-size: 70px;
+                        color: #3e3b39;
+                        font-family: $mainFont;
+                        font-weight: 300;
+                        position: relative;
+                        &::after {
+                            content: "Off";
+                            position: absolute;
+                            top: 15px;
+                            right: 90px;
+                            color: black;
+                            font-size: 15px;
+                        }
+                    }
+                    ul {
+                        margin-bottom: 45px;
+
+                        li {
+                            list-style: none;
+                            font-family: $mainFont;
+                            font-weight: 300;
+                            margin-bottom: 10px;
+                        }
+                    }
+                    a {
+                        @include buttonWithHover;
+                    }
+                }
+                .bg {
+                    background-color: #f3ece8 !important;
+                }
+            }
+        }
+    }
+}
+
+#instagram {
+    position: relative;
+    .container-fluid {
+        .row {
+            .col-lg-2 {
+                padding: 0 !important;
+                .image {
+                    position: relative;
+                    transition: all 0.7s;
+                    cursor: pointer;
+                    a {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #d3d3d361;
+                        opacity: 0;
+                        z-index: 1;
+                    }
+                    &:hover {
+                        &::before {
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .col-lg-12 {
+                .title {
+                    text-align: center;
+                    width: 16%;
+                    position: absolute;
+                    top: -135px;
+                    z-index: 100;
+                    left: 42%;
+                    p {
+                        background-color: $lightBackground;
+                        padding: 15px 0px;
+                        font-family: $mainFont;
+                        font-weight: 300;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+#instagram{
+    .container-fluid{
+        .row{
+            .col-xs-6{
+                .image{
+                    width: 70%;
+                    margin: auto;
+                    margin-bottom: 50px;
+                    a{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .col-lg-12{
+                .title{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+#titleOfPromotion{
+    .container{
+        .row{
+            .col-lg-12{
+                .title{
+                    h1{
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+@media (max-width: 768px){
+    #instagram{
+        .container-fluid{
+            .row{
+                .col-lg-12{
+                    .title{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px){
+    #instagram{
+        .container-fluid{
+            .row{
+                .col-lg-12{
+                    .title{
+                       display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+
+}

@@ -1,0 +1,59 @@
+.container {
+  .row {
+    .col-lg-4 {
+      .items {
+        position: relative;
+        overflow: hidden;
+        img {
+          max-width: 100%;
+          @include withoutHoverEffect;
+          &:hover {
+            @include withHoverEffect;
+          }
+        }
+        .item {
+          position: absolute;
+          top: 35%;
+          padding: 30px 51px 30px 15px;
+          background-color: $lightBackground;
+          @include withoutHoverEffect;
+          a {
+            text-decoration: none;
+            color: black;
+            h2 {
+              font-family: $secondFont;
+              font-size: 43px;
+            }
+          }
+          &:hover {
+            @include withHoverEffect;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    .row {
+      .col-lg-4 {
+        .items {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    .row {
+      .col-lg-4 {
+        .items {
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}

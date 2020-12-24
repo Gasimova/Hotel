@@ -1,0 +1,86 @@
+#titleOfContact {
+    background-image: url("../img/bg4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    .container {
+        .row {
+            .col-lg-12 {
+                .title {
+                    text-align: center;
+                    h1 {
+                        font-size: 60px;
+                        font-family: $secondFont;
+                        font-weight: 500;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#address {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    .container {
+        .row {
+            .col-lg-6 {
+                .info {
+                    .item {
+                        margin-bottom: 50px;
+                        h4 {
+                            font-family: $secondFont;
+                            font-weight: 500;
+                            margin-bottom: 10px;
+                            a {
+                                text-decoration: none;
+                                color: $navColor;
+                            }
+                        }
+                        p {
+                            font-family: $mainFont;
+                            font-weight: 300;
+                        }
+                    }
+                    form {
+                        margin-top: 100px;
+                        label {
+                            display: block;
+                            font-size: 14px;
+                            letter-spacing: 1px;
+                            text-transform: uppercase;
+                            font-family: $mainFont;
+                            font-weight: 300;
+                        }
+                        input {
+                            width: 100%;
+                            padding: 10px 10px 10px 10px;
+                            border: 1px solid rgba(0, 0, 0, 0.18);
+                            margin-bottom: 30px;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                        .messageInput{
+                           padding-bottom: 150px;
+                        }
+                        button{
+                            @include buttonWithHover;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+                .map {
+                    iframe {
+                        max-width: 100%;
+                        height: 320px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.tags {
+    font-family: $secondFont;
+    padding-top: 70px;
+    padding-left: 35px;
+    h4 {
+    }
+    ul {
+        padding: 0 !important;
+        li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 10px;
+            a {
+                text-decoration: none;
+                color: black;
+                font-size: 17px;
+                line-height: 1.58824em;
+                font-weight: 300;
+                transition: all 0.5s;
+                &:hover {
+                    color: $navColor;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,193 @@
+body {
+    h2 {
+        font-family: $secondFont;
+        line-height: 1.069767441860465em;
+        font-weight: 500;
+        font-size: 43px;
+    }
+}
+#title {
+    background-color: $lightBackground;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+.fixed{
+    position: fixed;
+    width: 347px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    left: 835px;
+    top: 105px;
+}
+
+#rooms {
+    padding-top: 100px;
+    position: relative;
+    .container {
+        .row {
+            .col-lg-8 {
+                .room {
+                    display: inline-block;
+                    position: relative;
+                    width: 48%;
+                    margin-right: 12px;
+                    margin-bottom: 30px;
+                    img {
+                        max-width: 96%;
+                       
+                    }
+                    &:hover{
+                        .details{
+                            opacity: 1;
+                        }
+                    }
+                    .details {
+                        position: absolute;
+                        top: 0;
+                        max-width: 96%;
+                        height: 100%;
+                        background: linear-gradient(9deg, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 85%);
+                        padding-left: 35px;
+                        padding-top: 70px;
+                        transition: all 0.5s linear;
+                        opacity: 0;
+                        cursor: pointer;
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            font-family: $mainFont;
+                            h3 {
+                                font-family: $secondFont;
+                                font-size: 40px;
+                                transition: all 0.5s ease-in-out;
+                                &:hover{
+                                    color: $navColor;
+                                }
+                            }
+                            span {
+                                font-size: 17px;
+                                font-weight: 300;
+                            }
+                            p {
+                                font-size: 17px;
+                                font-weight: 300;
+                                margin-top: 15px;
+                                width: 75%;
+                            }
+                        }
+                    }
+                }
+                .loadBtn{
+                   text-align: center;
+                   padding-bottom: 50px;
+                   padding-top: 50px;
+                    button{
+                        border: none;
+                        color: white;
+                        background-color: $backgrounColor !important;
+                        text-align: center;
+                        overflow: hidden;
+                        @include buttonWithHover;
+                        &:focus{
+                            outline: 0px;
+                        }
+                    }
+                }
+            }
+            .col-lg-4{
+               .calendar{
+                   transition: all 0.5s;
+               }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    #rooms{
+        .container{
+            .col-sm-12{
+                .room{
+                    width: 100% !important;
+                    .details{
+                        width: 100% !important;
+                        padding-top: 150px !important;
+                    }
+                }
+                .calendar{
+                    position: relative !important;
+                    top: 0%;
+                    left: 0 !important;
+                    margin: auto !important;
+                    margin-bottom: 100px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    #rooms{
+        .container{
+            .col-sm-12{
+                .room{
+                    width: 100% !important;
+                    .details{
+                        width: 100% !important;
+                        padding-top: 150px !important;
+                    }
+                }
+                .calendar{
+                    position: relative !important;
+                    top: 0%;
+                    left: 0 !important;
+                    margin: auto !important;
+                    margin-bottom: 100px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px){
+    #rooms{
+        .container{
+            .col-sm-12{
+                .room{
+                    width: 100% !important;
+                    .details{
+                        width: 100% !important;
+                        // padding-top: 250px !important;
+                    }
+                }
+                .calendar{
+                    position: relative !important;
+                    top: 0%;
+                    left: 0 !important;
+                    margin: auto !important;
+                    margin-bottom: 100px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    #rooms{
+        .container{
+            .col-sm-12{
+                .room{
+                    width: 100% !important;
+                    .details{
+                        width: 100% !important;
+                        // padding-top: 350px !important;
+                    }
+                }
+                .fixed{
+                    left: 730px !important;
+                }
+            }
+        }
+    }
+}

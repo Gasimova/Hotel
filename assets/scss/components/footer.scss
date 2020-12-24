@@ -1,0 +1,209 @@
+footer {
+    background-color: #faf9f5;
+    width: 100%;
+    margin: auto;
+    font-family: $mainFont;
+    color: #4d4d4d;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 118px 0 114px;
+    position: relative;
+    .container-fluid {
+        .row {
+            h4 {
+                font-family: $secondFont;
+                color: #000;
+                font-size: 25px;
+                line-height: 1.2em;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+            .col-lg-5 {
+                .aboutFooter {
+                    padding-left: 60px;
+                    padding-right: 70px;
+                    p {
+                        margin-bottom: 35px;
+                    }
+                }
+            }
+            .col-lg-2 {
+                .contactFooter {
+                    p {
+                        margin-bottom: 10px !important;
+                    }
+                    a {
+                        text-decoration: none;
+                        transition: all 0.5s;
+                        color: black;
+                        text-transform: uppercase;
+                        font-size: 13px;
+                        font-weight: 400;
+                        i {
+                            font-size: 10px;
+                            margin-left: 10px;
+                        }
+                        &:hover {
+                            color: $navColor;
+                        }
+                    }
+                }
+                .payment {
+                    .icons {
+                        margin-top: 90px;
+                        i {
+                            font-size: 28px;
+                            margin-right: 8px;
+                            color: #c5c0b1;
+                            transition: all 0.5s;
+                            &:hover {
+                                color: $navColor;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+            .col-lg-3 {
+                .getSocial {
+                    padding-right: 65px;
+                    padding-left: 25px;
+                    .socialIcons {
+                        margin-top: 90px;
+                        a {
+                            text-decoration: none;
+                            color: #0000008c;
+                            transition: all 0.5s;
+                            i {
+                                font-size: 24px;
+                                margin-right: 21px;
+                            }
+                            &:hover {
+                                color: $navColor;
+                            }
+                        }
+                    }
+                }
+            }
+            .col-lg-12 {
+                .copyright {
+                    text-align: center;
+                    background-color: #f3ece8;
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    top: 114px;
+                    padding-top: 15px;
+                    font-size: 15px;
+                    p {
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    footer{
+        .container-fluid {
+            .row {
+                .col-lg-2 {
+                    .contactFooter {
+                        padding-left: 60px;
+                        padding-right: 70px;
+                        margin-top: 30px;
+                    }
+                    .payment{
+                        padding-left: 60px;
+                        padding-right: 70px;
+                        margin-top: 30px;
+                        .icons{
+                            margin-top: 0px !important;
+                        }
+                    }
+                }
+                .col-lg-3{
+                    .getSocial{
+                        padding-left: 60px;
+                        padding-right: 70px;
+                        margin-top: 30px;
+                        .socialIcons{
+                            margin-top: 0px !important;
+                        }
+                    }
+                }
+            }
+        }
+      }
+}
+
+@media (max-width: 768px){
+    footer{
+        .container-fluid {
+            .row {
+                .col-lg-2 {
+                    .contactFooter {
+                        padding-left: 60px;
+                        padding-right: 70px;
+                        margin-top: 30px;
+                    }
+                    .payment{
+                        padding-left: 60px;
+                        padding-right: 70px;
+                        margin-top: 30px;
+                        .icons{
+                            margin-top: 0px !important;
+                        }
+                    }
+                }
+                .col-lg-3{
+                    .getSocial{
+                        padding-left: 60px;
+                        padding-right: 70px;
+                        margin-top: 30px;
+                        .socialIcons{
+                            margin-top: 0px !important;
+                        }
+                    }
+                }
+            }
+        }
+      }
+}
+
+@media (max-width: 992px){
+    footer{
+        .container-fluid {
+            .row {
+                .col-md-5{
+                    .aboutFooter{
+                        img{
+                            width: 90% !important;
+                        }
+                    }
+                }
+                .col-md-2{
+                    .payment{
+                        .icons{
+                            margin-top: 65px !important;
+                            margin-left: 20px !important;
+                        }
+                    }
+                }
+                .col-md-3{
+                    .getSocial{
+                        .socialIcons{
+                            margin-top: 42px !important;
+                            a{
+                                i{
+                                    font-size: 25px !important;
+                                    margin-right: 13px !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+      }
+}

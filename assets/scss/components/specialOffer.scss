@@ -1,0 +1,16 @@
+.specialOffer{
+    padding-top: 100px;
+    padding-left: 35px;
+    .offerImg{
+        overflow: hidden;
+        a{
+            img{
+                transition: all 0.5s;
+                transform: scale(1);
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

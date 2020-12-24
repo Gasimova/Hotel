@@ -1,0 +1,327 @@
+
+#blogs {
+    .container {
+        .row {
+            .col-lg-8 {
+                .blog {
+                    font-family: $mainFont;
+                    font-weight: 300;
+                    padding-bottom: 15px;
+                    transition: all 0.6s ease-in-out;
+                    margin-bottom: 10px;
+                    border-radius: 10px;
+                    &:hover {
+                        box-shadow: -1px 1px 15px -3px #777676;
+                    }
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        transition: all 0.5s ease-in-out;
+                    }
+                    img {
+                        max-width: 100%;
+                    }
+                    .blogContent {
+                        padding: 25px 15px;
+                        span {
+                            color: $navColor;
+                            display: block;
+                            font-size: 17px;
+
+                            .author {
+                                color: $navColor;
+                                margin-left: 10px;
+                                &:hover {
+                                    color: black;
+                                }
+                            }
+                        }
+                        .blogTitle {
+                            font-family: $secondFont;
+                            font-size: 35px;
+                            font-weight: 500;
+                            letter-spacing: 1px;
+                            &:hover {
+                                color: $navColor;
+                            }
+                        }
+                        p {
+                            color: $textColor;
+                            font-size: 17px;
+                            line-height: 1.58824em;
+                            margin-top: 10px;
+                            margin-bottom: 30px;
+                        }
+                        .readBtn {
+                            text-transform: uppercase;
+                            font-weight: 500;
+                            font-size: 12px;
+                            position: relative;
+                            letter-spacing: 0.7px;
+                            &::before {
+                                content: "\f067";
+                                position: absolute;
+                                top: 0;
+                                right: -18px;
+                                font-family: "FontAwesome";
+                                color: black;
+                                font-size: 8px;
+                                transition: all 0.5s ease-in-out;
+                            }
+                            &:hover {
+                                color: $navColor;
+                                &::before {
+                                    color: $navColor;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .col-lg-4 {
+                background-color: $lightBackground;
+                
+                .populatPosts {
+                    font-family: $secondFont;
+                    h4 {
+                        font-size: 25px;
+                        padding: 35px 0px 10px 35px;
+                    }
+                    .post {
+                        padding-left: 35px;
+                        position: relative;
+                        margin-bottom: 25px;
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+                        .postImage {
+                            img {
+                                max-width: 40%;
+                            }
+                        }
+                        .blogDetail {
+                            position: absolute;
+                            left: 175px;
+                            top: 15px;
+                            font-weight: 300;
+                            h5 {
+                                font-size: 17px;
+                                transition: all 0.5s;
+                                a {
+                                    &:hover {
+                                        color: $navColor;
+                                    }
+                                }
+                            }
+                            span {
+                                font-family: $mainFont;
+                                font-size: 17px;
+                                a {
+                                    color: $navColor;
+                                    transition: all 0.5s;
+                                    &:hover {
+                                        color: black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .aboutUs {
+                    padding-top: 40px;
+                    padding-left: 35px;
+                    h4 {
+                        font-family: $secondFont;
+                    }
+                    p {
+                        font-family: $mainFont;
+                        color: $textColor;
+                        font-weight: 300;
+                        margin-top: 15px;
+                        line-height: 1.5em;
+                        font-size: 17px;
+                    }
+                    .logo {
+                        text-align: center;
+                        margin-top: 25px;
+                        img {
+                            max-width: 30%;
+                        }
+                    }
+                }
+                .categories {
+                    font-family: $secondFont;
+                    padding-top: 70px;
+                    padding-left: 35px;
+                    ul {
+                        list-style: none;
+                        padding: 0 !important;
+                        li {
+                            margin-bottom: 5px;
+                            a {
+                                text-decoration: none;
+                                color: black;
+                                font-size: 17px;
+                                line-height: 1.58824em;
+                                font-weight: 300;
+                                transition: all 0.5s;
+                                &:hover {
+                                    color: $navColor;
+                                }
+                            }
+                        }
+                    }
+                }
+                .search {
+                    font-family: $secondFont;
+                    padding-top: 70px;
+                    padding-left: 35px;
+                    h4{
+                        margin-bottom: 20px;
+                    }
+                    form {
+                        input {
+                            background: transparent;
+                            border: none;
+                            border-bottom: 1px solid #4d4d4d80;
+                            width: 270px;
+                            letter-spacing: 1px;
+                            &::placeholder{
+                                color: black;
+                                font-family: $mainFont;
+                                font-weight: 300;
+                            }
+                            &:focus{
+                                outline: 0px auto;
+                            }
+                        }
+                        button {
+                            position: relative;
+                            left: -40px;
+                            top: -5px;
+                            border: none;
+                            width: 40px;
+                            height: 40px;
+                            background: transparent;
+                            border: none;
+                            &:active{
+                                outline: unset !important;
+                                border: none !important;
+                            }
+                            &::before {
+                                content: "\f002";
+                                position: absolute;
+                                top: 7px;
+                                right: 10px;
+                                color: black;
+                                font-family: "FontAwesome";
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    #blogs{
+        .container{
+            .row{
+                .col-lg-4{
+                    .populatPosts{
+                        .post{
+                            .blogDetail{
+                                left: 220px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px){
+    #blogs{
+        .container{
+            .row{
+                .col-lg-4{
+                    .populatPosts{
+                        .post{
+                            .blogDetail{
+                                left: 250px;
+                            }
+                        }
+                    }
+                    .search{
+                        form{
+                            button{
+                                top: -5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px){
+    #blogs{
+        .container{
+            .row{
+                .col-lg-4{
+                    .populatPosts{
+                        .post{
+                            .blogDetail{
+                                left: 325px;
+                            }
+                        }
+                    }
+                    .search{
+                        form{
+                            button{
+                                top: -5px;
+                            }
+                            input{
+                                width: 90%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px){
+    #blogs{
+        .container{
+            .row{
+                .col-lg-4{
+                    .populatPosts{
+                        .post{
+                            .blogDetail{
+                                // left: 325px;
+                            }
+                        }
+                    }
+                    .search{
+                        form{
+                            button{
+                                top: -5px;
+                            }
+                            input{
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
